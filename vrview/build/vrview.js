@@ -795,7 +795,7 @@ Util.isIE11 = function() {
 };
 
 Util.getRectCenter = function(rect) {
-  return new THREE.Vector2(rect.x + rect.width/2, rect.y + rect.height/2);
+  return new THREE.Vector2(rect.x + rect.width, rect.y + rect.height);
 };
 
 Util.getScreenWidth = function() {
