@@ -18,7 +18,7 @@ var vrView;
 var scenes = {
   livingroom: {
     image: 'livingroom.jpg',
-    preview: 'livingroom-preview.jpg',
+    preview: 'dolphin-preview.jpg',
     hotspots: {
       whaleRight: {
         pitch: 0,
