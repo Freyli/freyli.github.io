@@ -118,7 +118,7 @@ function onLoad() {
   vrView = new VRView.Player('#vrview', {
     image: 'blank.png',
     preview: 'blank.png',
-    is_stereo: true,
+    is_stereo: false,
     is_autopan_off: true
   });
 
