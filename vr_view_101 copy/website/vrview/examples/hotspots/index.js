@@ -27,8 +27,8 @@ var scenes = {
         distance: 1
       },
       stair2: {
-        pitch: 40,
-        yaw: 80,
+        pitch: 0,
+        yaw: 90,
         radius: 0.05,
         distance: 1
       },
@@ -109,8 +109,7 @@ var scenes = {
         yaw: 305,
         radius: 0.05,
         distance: 1
-      }
-      
+      }    
      }
   },  
    basement: {
