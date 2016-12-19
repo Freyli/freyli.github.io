@@ -222,7 +222,7 @@ function onHotspotClick(e) {
   if (e.id) {
     loadScene(e.id);
   }
-}
+};
 
 function loadScene(id) {
   console.log('loadScene', id);
