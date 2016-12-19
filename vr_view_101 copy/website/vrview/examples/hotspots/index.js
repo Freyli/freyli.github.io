@@ -16,31 +16,7 @@ var vrView;
 
 // All the scenes for the experience
 var scenes = {
-    livingroom: {
-    image: 'livingroom.jpg',
-    preview: 'livingroom-preview.jpg',
-    hotspots: {
-      stair0: {
-        pitch: 0,
-        yaw: 80,
-        radius: 0.05,
-        distance: 1
-      },
-      stair2: {
-        pitch: 0,
-        yaw: 90,
-        radius: 0.05,
-        distance: 1
-      },
-      kitchen: {
-        pitch: 0,
-        yaw: 170,
-        radius: 0.05,
-        distance: 1
-      }
-    }
-  },
-  stair2: {
+   stair2: {
     image: 'stair2.jpg',
     preview: 'stair2-preview.jpg',
     hotspots: {
