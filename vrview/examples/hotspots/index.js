@@ -20,19 +20,19 @@ var scenes = {
     image: 'livingroom.jpg',
     preview: 'livingroom-preview.jpg',
     hotspots: {
-      whaleRight: {
+      stair0: {
         pitch: 0,
         yaw: 110,
         radius: 0.05,
         distance: 1
       },
-      whaleLeft: {
+      stair2: {
         pitch: 0,
         yaw: 150,
         radius: 0.05,
         distance: 1
       },
-      walrus: {
+      kitchen: {
         pitch: 0,
         yaw: 170,
         radius: 0.05,
@@ -40,11 +40,11 @@ var scenes = {
       }
     }
   },
-  whaleLeft: {
-    image: 'whale-left.jpg',
-    preview: 'whale-left-preview.jpg',
+  stair2: {
+    image: 'stair2.jpg',
+    preview: 'stair2-preview.jpg',
     hotspots: {
-      whaleRight: {
+      stair0: {
         pitch: 0,
         yaw: 125,
         radius: 0.05,
@@ -56,7 +56,7 @@ var scenes = {
         radius: 0.05,
         distance: 1
       },
-      walrus: {
+      kitchen: {
         pitch: 0,
         yaw: 30,
         radius: 0.05,
@@ -64,9 +64,9 @@ var scenes = {
       }
     }
   },
-  whaleRight: {
-    image: 'whale-right.jpg',
-    preview: 'whale-right-preview.jpg',
+  stair0: {
+    image: 'stair0.jpg',
+    preview: 'stair0-preview.jpg',
     hotspots: {
       livingroom: {
         pitch: 0,
@@ -74,13 +74,13 @@ var scenes = {
         radius: 0.05,
         distance: 1
       },
-      whaleLeft: {
+      stair2: {
         pitch: 0,
         yaw: 180,
         radius: 0.05,
         distance: 1
       },
-      walrus: {
+      kitchen: {
         pitch: 0,
         yaw: 210,
         radius: 0.05,
@@ -88,17 +88,17 @@ var scenes = {
       }
     }
   },
-  walrus: {
-    image: 'walrus.jpg',
-    preview: 'walrus-preview.jpg',
+  kitchen: {
+    image: 'kitchen.jpg',
+    preview: 'kitchen-preview.jpg',
     hotspots: {
-      whaleLeft: {
+      stair2: {
         pitch: 0,
         yaw: 20,
         radius: 0.05,
         distance: 1
       },
-      whaleRight: {
+      stair0: {
         pitch: 0,
         yaw: 340,
         radius: 0.05,
@@ -130,7 +130,7 @@ function onLoad() {
 
 function onVRViewReady(e) {
   console.log('onVRViewReady');
-  loadScene('walrus');
+  loadScene('livingroom');
 }
 
 function onModeChange(e) {
