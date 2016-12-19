@@ -16,23 +16,23 @@ var vrView;
 
 // All the scenes for the experience
 var scenes = {
-  dolphins: {
-    image: 'dolphins.jpg',
-    preview: 'dolphins-preview.jpg',
+    livingroom: {
+    image: 'livingroom.jpg',
+    preview: 'livingroom-preview.jpg',
     hotspots: {
-      whaleRight: {
+      stair0: {
         pitch: 0,
-        yaw: 110,
+        yaw: 80,
         radius: 0.05,
         distance: 1
       },
-      whaleLeft: {
-        pitch: 0,
-        yaw: 150,
+      stair2: {
+        pitch: 40,
+        yaw: 80,
         radius: 0.05,
         distance: 1
       },
-      walrus: {
+      kitchen: {
         pitch: 0,
         yaw: 170,
         radius: 0.05,
@@ -40,47 +40,127 @@ var scenes = {
       }
     }
   },
-  whaleLeft: {
-    image: 'whale-left.jpg',
-    preview: 'whale-left-preview.jpg',
+  stair2: {
+    image: 'stair2.jpg',
+    preview: 'stair2-preview.jpg',
     hotspots: {
-      whaleRight: {
-        pitch: 0,
-        yaw: 125,
-        radius: 0.05,
-        distance: 1
-      },
-      dolphins: {
+      livingroom: {
         pitch: 0,
         yaw: 110,
         radius: 0.05,
         distance: 1
       },
-      walrus: {
+      kitchen: {
         pitch: 0,
-        yaw: 30,
+        yaw: 280,
+        radius: 0.05,
+        distance: 1
+      },
+      bathroom: {
+        pitch: 0,
+        yaw: 20,
+        radius: 0.05,
+        distance: 1
+      },
+      bedroom: {
+        pitch: 0,
+        yaw: 40,
+        radius: 0.05,
+        distance: 1
+      },
+      office: {
+        pitch: 0,
+        yaw: 90,
         radius: 0.05,
         distance: 1
       }
+
     }
   },
-  whaleRight: {
-    image: 'whale-right.jpg',
-    preview: 'whale-right-preview.jpg',
+  
+  bathroom: {
+    image: 'bathroom.jpg',
+    preview: 'bathroom-preview.jpg',
     hotspots: {
-      dolphins: {
+      stair2: {
         pitch: 0,
         yaw: 305,
         radius: 0.05,
         distance: 1
       },
-      whaleLeft: {
+  bedroom: {
+    image: 'bedroom.jpg',
+    preview: 'bedroom-preview.jpg',
+    hotspots: {
+      stair2: {
+        pitch: 0,
+        yaw: 305,
+        radius: 0.05,
+        distance: 1
+      }
+     }
+  }, 
+  office: {
+    image: 'office.jpg',
+    preview: 'office-preview.jpg',
+    hotspots: {
+      stair2: {
+        pitch: 0,
+        yaw: 305,
+        radius: 0.05,
+        distance: 1
+      }
+      
+     }
+  },  
+   basement: {
+    image: 'basement.jpg',
+    preview: 'basement-preview.jpg',
+    hotspots: {
+      stair0: {
+        pitch: 0,
+        yaw: 305,
+        radius: 0.05,
+        distance: 1
+      },
+      workshop: {
+        pitch: 0,
+        yaw: 200,
+        radius: 0.05,
+        distance: 1
+      }
+    }
+  }, 
+  workshop: {
+    image: 'workshop.jpg',
+    preview: 'workshop-preview.jpg',
+    hotspots: {
+      basement: {
+        pitch: 0,
+        yaw: 305,
+        radius: 0.05,
+        distance: 1
+      }
+    }
+  },
+      
+  stair0: {
+    image: 'stair0.jpg',
+    preview: 'stair0-preview.jpg',
+    hotspots: {
+      livingroom: {
+        pitch: 0,
+        yaw: 305,
+        radius: 0.05,
+        distance: 1
+      },
+      basement: {
         pitch: 0,
         yaw: 180,
         radius: 0.05,
         distance: 1
       },
-      walrus: {
+      kitchen: {
         pitch: 0,
         yaw: 210,
         radius: 0.05,
@@ -88,23 +168,23 @@ var scenes = {
       }
     }
   },
-  walrus: {
-    image: 'walrus.jpg',
-    preview: 'walrus-preview.jpg',
+  kitchen: {
+    image: 'kitchen.jpg',
+    preview: 'kitchen-preview.jpg',
     hotspots: {
-      whaleLeft: {
+      stair2: {
         pitch: 0,
         yaw: 20,
         radius: 0.05,
         distance: 1
       },
-      whaleRight: {
+      stair0: {
         pitch: 0,
         yaw: 340,
         radius: 0.05,
         distance: 1
       },
-      dolphins: {
+      livingroom: {
         pitch: 0,
         yaw: 320,
         radius: 0.05,
@@ -176,3 +256,4 @@ function onVRViewError(e) {
 }
 
 window.addEventListener('load', onLoad);
+
