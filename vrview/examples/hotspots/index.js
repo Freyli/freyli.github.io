@@ -22,13 +22,13 @@ var scenes = {
     hotspots: {
       stair0: {
         pitch: 0,
-        yaw: 110,
+        yaw: 80,
         radius: 0.05,
         distance: 1
       },
       stair2: {
-        pitch: 0,
-        yaw: 150,
+        pitch: 40,
+        yaw: 80,
         radius: 0.05,
         distance: 1
       },
@@ -52,7 +52,7 @@ var scenes = {
       },
       kitchen: {
         pitch: 0,
-        yaw: 30,
+        yaw: 280,
         radius: 0.05,
         distance: 1
       },
