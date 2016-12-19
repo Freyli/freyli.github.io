@@ -1,100 +1,63 @@
-html, body {
-  background-color: #000;
-  color: #eee;
-  margin: 0px;
-  padding: 0px;
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 
-  /* Prevent user selection. */
-  user-select: none;
-  touch-callout: none;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-}
-.dialog {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-family: sans-serif;
-  font-size: 170%;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-.dialog.visible {
-  display: flex;
-}
-.dialog .wrap {
-  padding: 30px 60px;
-  margin: 20px auto;
-  width: 60%;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
-}
-.dialog h1 {
+ * Copyright 2016 Google Inc.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+body {
   margin: 0;
 }
-
-a, a:visited {
-  color: skyblue;
+h1, h2 {
+  font-family: 'Lora', serif;
 }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
 
-#watermark img {
-  position: fixed;
-  overflow: hidden;
-  left: 0;
-  bottom: 0;
-  opacity: 0.3;
-  width: 24px;
-  height: 24px;
-  padding: 12px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-#watermark img:hover {
-  opacity: 1;
-  -webkit-filter: drop-shadow(white 0 0 5px);
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
 }
 
-
-canvas {
-  cursor: -webkit-grab;
-}
-canvas:active {
-  cursor: -webkit-grabbing;
+h1, h2, p {
+  margin: 1rem;
 }
 
-#play-overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-	align-items: center;
-  justify-content: center;
-}
-#play-overlay.visible {
-	display: flex;
-}
-#play-overlay img {
-  width: 40%;
-  height: 40%;
+p.caption {
+  font-size: 0.7rem
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: 'Lora', serif;
 }
 
-#error .message {
-  font-family: monospace;
+iframe { border: 0; }
+
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+  iframe {
+    height: 240px;
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 600px) {
+  iframe {
+    height: 400px;
+    width: 700px;
+    margin: 1rem auto;
+    display: block;
+  }
+  h1, h2, p {
+    width: 700px;
+    margin: 1rem auto;
+  }
 }
