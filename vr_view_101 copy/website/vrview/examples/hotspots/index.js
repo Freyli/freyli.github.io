@@ -210,7 +210,7 @@ function onLoad() {
 
 function onVRViewReady(e) {
   console.log('onVRViewReady');
-  loadScene('walrus');
+  loadScene('livingroom');
 }
 
 function onModeChange(e) {
